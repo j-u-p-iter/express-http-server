@@ -1,0 +1,31 @@
+{
+  "name": "@j.u.p.iter/express-http-server",
+  "version": "0.0.0-semantically-released",
+  "description": "Express HTTP server",
+  "keywords": [
+    "express http server"
+  ],
+  "main": "dist/lib/express-http-server.cjs.js",
+  "module": "dist/lib/express-http-server.esm.js",
+  "typings": "dist/types",
+  "repository": "git@github.com:j-u-p-iter/express-http-server.git",
+  "author": "j.u.p.iter <pn79122821224@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "commit": "jupiter-scripts precommit --allowJs",
+    "build": "jupiter-scripts build --bundle",
+    "start": "yarn run build --watch",
+    "lint": "jupiter-scripts lint --format codeFrame",
+    "lint:fix": "yarn run lint --fix",
+    "test": "jupiter-scripts test"
+  },
+  "peerDependencies": {
+    "mongoose": ">=4.16.4"
+  },
+  "devDependencies": {
+    "@j.u.p.iter/jupiter-scripts": "^1.14.1",
+    "@types/express": "^4.17.2",
+    "axios": "^0.19.1",
+    "express": "^4.17.1"
+  }
+}
